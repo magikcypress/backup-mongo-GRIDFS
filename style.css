@@ -1,0 +1,244 @@
+
+body {font-family:Arial, Helvetica Neue, Helvetica, sans-serif;font-size:12px;}
+table { font-size:12px; }
+.clear {clear:both;}
+a:link, a:visited {color:#000;font-weight:bold;}
+a:hover {color:#000;font-weight:bold;}
+img { border: none; }
+#form { display: none; }
+#body {
+	margin: 10px auto 15px auto;
+	width:740px;
+	text-align:left;
+}
+#top { text-align: right; width: 100%; }
+#login, #register { display:none; }
+#sidebar {float:left;width:290px;min-height:300px;}
+#allfiles {float:right;width:420px;}
+h2 {font-size:20px;font-weight:normal;margin:10px 0 15px 0;}
+#loader {display:none;padding:0 0 0 20px;}
+
+#allfiles ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-left:1px solid #eee;
+}
+#allfiles ul li {padding:8px 5px;border-top:1px solid #eee;}
+.odd {background:#f9f9f9;}
+
+.uploadifyQueue {
+	margin-top:30px;
+}
+.uploadifyQueueItem {
+	font-size: 11px;
+	color:#333;
+	padding:20px 5px;
+	width:240px;
+	background:#ECF3F6;
+}
+.uploadifyError {
+	color: #cc0000 !important;
+}
+.uploadifyError .uploadifyProgressBar {
+	background-color: #cc0000 !important;
+}
+#sidebar .cancel {float:right;}
+#sidebar .cancel a:link,
+#sidebar .cancel a:visited,
+#sidebar .cancel a:hover {
+	padding:0 !important;
+	margin:0 4px 0 0 !important;
+	width:11px !important;
+	background: transparent !important;
+}
+.uploadifyProgress {
+	background-color: #FFF;
+	margin-top: 8px;
+	width: 97%;
+}
+.uploadifyProgressBar {
+	background-color: #A3C7D8;
+	width: 1px;
+	height: 5px;
+}
+
+/* TABLE
+ * ========================================================================= */
+table {
+  border: 1px solid #888;
+  border-collapse: collapse;
+  line-height: 1;
+  margin: 1em auto;
+  width: 100%;
+}
+
+/* Caption
+ * ------------------------------------------------------------------------- */
+table caption {
+  display: none;
+}
+
+/* Header
+ * ------------------------------------------------------------------------- */
+table thead {
+  background: #aaa url(img/bg-table-thead.png) repeat-x top left;
+  font-size: .9em;
+}
+
+table thead tr th {
+  border: 1px solid #888;
+  font-weight: normal;
+  padding: .3em 1.67em .1em 1.67em;
+  text-align: left;
+}
+
+/* Body
+ * ------------------------------------------------------------------------- */
+table tbody tr td {
+  cursor: default;
+  padding: .3em 1.5em;
+}
+
+table tbody tr.even {
+  background: #f3f3f3;
+}
+
+table tbody tr.odd {
+  background: #fff;
+}
+
+table span {
+  background-position: center left;
+  background-repeat: no-repeat;
+  padding: .2em 0 .2em 1.5em;
+}
+
+table span.file {
+  background-image: url(img/page_white_text.png);
+}
+
+table span.folder {
+  background-image: url(img/folder.png);
+}
+
+
+/* Base Superbox Styles
+ * ------------------------------------------------------------------------- */
+#superbox-overlay{position:fixed;top:0;left:0;z-index:9998;width:100%;height:100%;}
+#superbox-wrapper{position:fixed;z-index:9999;top:0;left:0;display:table;width:100%;height:100%;}
+#superbox-container{position:relative;display:table-cell;width:100%;height:100%;margin:0;padding:0;vertical-align:middle;}
+#superbox{margin:0 auto;padding:0;}
+#superbox-container .loading{margin:0;text-align:center;}
+
+/* IE7 */
+*:first-child+html #superbox-container{position:absolute;top:50%;left:0;display:block;height:auto;}
+*:first-child+html #superbox{position:relative;top:-50%;display:block;}
+/* IE6 - Thanks to Thickbox for IE expressions */
+* html #superbox-container{position:absolute;top:50%;left:0;display:block;height:auto;}
+* html #superbox{position:relative;top:-50%;display:block;}
+* html #superbox-overlay{position:absolute;height:expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight + 'px' : document.body.offsetHeight + 'px');}
+* html #superbox-wrapper{position:absolute;margin-top:expression(0 - parseInt(this.offsetHeight / 2) + (document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');}
+
+/* Default Theme */
+#superbox-overlay{background:#000;}
+#superbox-container .loading{text-align:center;font-size:40px;color:#fff;}
+#superbox{padding:10px;background:#fff;outline:0;}
+#superbox-innerbox{padding:10px 0;}
+#superbox.image{text-align:center;}
+#superbox .close,
+#superbox .nextprev{overflow:hidden;margin:0;padding:1px;}
+#superbox .close a:focus,
+#superbox .nextprev a:focus{outline:1px dotted;}
+
+/* Tabs horizontal
+ * ------------------------------------------------------------------------- */
+/* root element for tabs  */
+ul.tabs {
+	list-style:none;
+	margin:0 !important;
+	padding:0;
+	border-bottom:1px solid #666;
+	height:auto;
+}
+
+/* single tab */
+ul.tabs li {
+	float:left;
+	text-indent:0;
+	padding:0;
+	margin:0 !important;
+	list-style-image:none !important;
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a {
+	display:block;
+	width: 100%;
+	text-align:center;
+	text-decoration:none;
+	color:#333;
+	padding:0px;
+	margin:0px;
+	position:relative;
+}
+
+ul.tabs a:active {
+	outline:none;
+}
+
+/* when mouse enters the tab move the background image */
+ul.tabs a:hover {
+	color:#000;
+}
+
+/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+	background-position: -420px -62px;
+	cursor:default !important;
+	color:#000 !important;
+}
+
+/* initially all panes are hidden */
+.panes .pane {
+	display:none;
+}
+
+/* tab pane styling */
+.panes div.tab {
+
+	padding:5px 5px;
+	border:1px solid #999;
+	border-top:0;
+	font-size:14px;
+	background-color:#fff;
+}
+
+/* Carousel
+ * ------------------------------------------------------------------------- */
+.panes .js{overflow:hidden;zoom:1;}
+.panes .carousel,
+.panes .carousel .carousel-wrap{margin:0;border:0;zoom:1;}
+.panes .js .carousel-wrap{display:inline-block;vertical-align:middle;width:290px;margin:0 5px 5px;border:1px solid #4f4f4f;background:#1a1a1a;}
+.IE .panes .js .carousel-wrap{display:inline;}
+.panes .carousel ul{margin:0;padding:0;zoom:1;}
+.panes .js ul li{overflow:hidden;display:inline;float:left;width:400px;height:235px;text-align:center;}
+.panes .carousel .carousel-control{overflow:hidden;display:inline-block;vertical-align:middle;width:40px;height:40px;cursor:pointer;line-height:999px;zoom:1;}
+.panes .carousel .carousel-next{background:url(img/next.png) 0 0 no-repeat;}
+.panes .carousel .carousel-previous{background:url(img/prev.png) 0 0 no-repeat;}
+.panes .carousel .carousel-control:hover{-moz-opacity:.7;opacity:0.70;filter:alpha(opacity=70);}
+.panes .carousel .disabled,#allfiles .carousel .disabled:hover{-moz-opacity:.1;opacity:0.10;filter:alpha(opacity=10);cursor:default;}
+.panes .carousel div{margin:0;padding:0;border:0;}
+.panes .carousel ul {padding:0;list-style:none;}
+.panes .carousel ul li{position:relative;width:290px;margin:0;}
+.panes .carousel ul li cite{position:absolute;bottom:18px;right:10px;line-height:19px;font-size:11px; background-color: #fff; -moz-opacity:.9;opacity:0.90;filter:alpha(opacity=90); padding: 3px; }
+.panes .carousel ul li cite a img{vertical-align:middle;}
+.panes .carousel ul li cite a{color:#fff;text-decoration:none;}
+
+
+/* Message
+ * ------------------------------------------------------------------------- */
+
+.messageboxerror { border: solid 1px red; }

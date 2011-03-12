@@ -1,0 +1,32 @@
+BACKUP Mongo
+
+Permet d'uploader des fichiers sur un serveur depuis un navigateur web. 
+Utilise GRIDFS pour stocker les fichiers en base
+
+Application utilisées
+- PHP5
+- mongodb
+- Jquery
+- Uploadify
+
+Installation
+
+Installer PHP
+
+i   php-pear                        - PEAR - PHP Extension and Application Repos
+i   php5-cgi                        - server-side, HTML-embedded scripting langu
+i A php5-cli                        - command-line interpreter for the php5 scri
+i A php5-common                     - Common files for packages built from the p
+i   php5-curl                       - CURL module for php5                      
+i   php5-dev                        - Files for PHP5 module development 
+
+Installer le support mongoDB
+
+$ pecl install mongo
+
+Modifier action/connect.php pour la connexion à la db
+
+Doc
+http://www.mongodb.org/display/DOCS/GridFS+Specification
+
+Vincent Legeard | Legeardweb.com | vincent@legeard.info | 20110312 
