@@ -1,3 +1,7 @@
+Nom : Vincent Legeard 
+Website : Legeardweb.com 
+Date : 20110312 
+
 BACKUP Mongo
 
 Permet d'uploader des fichiers sur un serveur depuis un navigateur web. 
@@ -29,5 +33,4 @@ Modifier action/connect.php pour la connexion à la db
 Doc
 http://www.mongodb.org/display/DOCS/GridFS+Specification
 
-Vincent Legeard | Legeardweb.com | vincent@legeard.info | 20110312 
 
